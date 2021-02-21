@@ -5,7 +5,7 @@ var bodyParser = require('body-parser');
 //Firebase Real Time
 var firebase = require("firebase-admin");
 
-var serviceAccount = require("serviceAccountKey.json");
+var serviceAccount = require("./serviceAccountKey.json");
 
 firebase.initializeApp({
   credential: firebase.credential.cert(serviceAccount),
